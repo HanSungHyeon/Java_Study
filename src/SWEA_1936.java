@@ -2,15 +2,21 @@ import java.util.Scanner;
 
 public class SWEA_1936 {
     public static void main(String[] args) {
-        int a, b;
-        Scanner sc = new Scanner(System.in);
-        a = sc.nextInt();
-        b = sc.nextInt();
+        System.out.println(twoTimes("a","-"));
+        int num1 =1,num2 = 2,num3 = 3;
+        num1 = num1 + num2;
+        num1 = num1 + num3;
+        System.out.println(num1);
 
-        if(a == 1 && b == 3 || a == 2 && b == 1 || a == 3 && b ==2)
-            System.out.print("A");
-        else
-            System.out.print("B");
 
+
+    }
+
+    public static String twoTimes(String text, String a){
+        String out = "";
+        out = out + a + "\n";   //""-
+        out = out + text +"\n";
+        out = out + text +"\n";
+        return out;
     }
 }
